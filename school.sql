@@ -1,3 +1,5 @@
+-- Review
+
 CREATE TABLE subjects (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     subject VARCHAR(32) NOT NULL DEFAULT ""
