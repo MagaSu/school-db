@@ -8,7 +8,7 @@ CREATE TABLE subjects (
 CREATE TABLE teachers (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     fio VARCHAR(128) NOT NULL DEFAULT "",
-    tel VARCHAR(18) NOT NULL DEFAULT ""
+    phone_number VARCHAR(18) NOT NULL DEFAULT ""
 );
 
 CREATE TABLE classes (
@@ -36,7 +36,7 @@ CREATE INDEX teacher_classes ON teachers_classes (class_id);
 CREATE TABLE students (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     fio VARCHAR(128) NOT NULL DEFAULT "",
-    tel VARCHAR(18) NOT NULL DEFAULT "",
+    phone_number VARCHAR(18) NOT NULL DEFAULT "",
     birthday CHAR(8) NOT NULL DEFAULT "",
     address TEXT NOT NULL DEFAULT "",
     class_id INTEGER NOT NULL DEFAULT 0
